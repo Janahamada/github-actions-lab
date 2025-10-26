@@ -1,10 +1,6 @@
-name: Hello Agile
+name: Action Basics Demo
 
-on: 
-  push:
-    branches: [ dev ] # Triggers when code is pushed to the 'dev' branch
-  pull_request:
-    branches: [ main ] # Triggers when a PR is opened targeting 'main'
+on: [push]
 
 jobs:
   build:
@@ -25,3 +21,4 @@ jobs:
           python -c "print('Hello from Python in GitHub Actions!')"
           python -c "for i in range(3): print(f'Counting {i+1}')"
           echo "---"
+
